@@ -4,7 +4,7 @@ import { FaReact, FaNodeJs, FaGithub, FaCode } from "react-icons/fa";
 
 const About = () => {
   return (
-    <section id="about" className="relative py-24 bg-base-300">
+    <section id="about" className="relative py-24 bg-base-100">
       <Container>
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">

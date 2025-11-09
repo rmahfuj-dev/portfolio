@@ -27,7 +27,7 @@ const services = [
 
 const Service = () => {
   return (
-    <section id="services" className="py-24 bg-base-300">
+    <section id="services" className="py-24 bg-base-100">
       <Container>
         <h2 className="text-5xl font-extrabold text-green-400 mb-12 text-center">
           My Services

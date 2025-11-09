@@ -1,38 +1,72 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Container from "../Container";
-import me from '/mee.png'
+import me from "/mee.png";
+import { HashLink } from "react-router-hash-link";
+import gsap from "gsap";
 
 const Hero = () => {
+  const textRef = useRef(null);
+  const imageRef = useRef(null);
+
+  useEffect(() => {
+    if (textRef.current && imageRef.current) {
+      const tl = gsap.timeline({ defaults: { duration: 1, ease: "power3.out" } });
+
+      tl.fromTo(
+        textRef.current,
+        { opacity: 0, scale:0 },
+        { opacity: 1, scale: 1 }
+      )
+      .fromTo(
+        imageRef.current,
+        { opacity: 0, scale: 0 },
+        { opacity: 1, scale: 1 },
+        "-=0.5"
+      );
+    }
+  }, []);
+
   return (
-    <div>
+    <section className="bg-base-300 min-h-screen flex items-center" id="hero">
       <Container>
-        <div className="wrapper grid grid-cols-1 xl:grid-cols-2 place-items-center md:py-20 bg-base-300 gap-8 xl:gap-0 h-[90vh] py-5">
-          <div className="text flex flex-col justify-center xl:items-start gap-5 xl:gap-12 order-2 xl:order-1 items-center text-center xl:text-start">
-            <div className="text-3xl xl:text-5xl font-semibold">
-              <h1 className="mb-10">Hi, I am Mahfuj</h1>
-              <h1 className="leading-relaxed animate-typing overflow-hidden whitespace-nowrap border-green-500 border-r-4 inline-block text-wrap">
-                Full-Stack Developer
-              </h1>
-            </div>
-            <p className="text-xl">
-              Building digital experience that merge creativity with technology
+        <div className="grid grid-cols-1 xl:grid-cols-2 items-center gap-8 xl:gap-16 py-10">
+          <div
+            ref={textRef}
+            className="flex flex-col justify-center items-center xl:items-start text-center xl:text-start gap-6"
+          >
+            <h1 className="text-4xl xl:text-6xl font-extrabold text-green-400">
+              Hi, I am Mahfuj
+            </h1>
+            <h2 className="text-2xl xl:text-4xl font-semibold text-white">
+              Full-Stack Developer
+            </h2>
+            <p className="text-lg xl:text-xl text-base-content/70 max-w-xl">
+              Building digital experiences that merge creativity with technology. I craft modern, responsive, and performant web applications.
             </p>
-            <button className="bg-green-600 px-3 py-3 font-semibold text-xl rounded-md">
+            <HashLink
+              to="#contact"
+              className="bg-green-600 hover:bg-green-500 px-6 py-3 rounded-md font-semibold text-lg xl:text-xl transition-all duration-300 shadow-md hover:shadow-lg text-white"
+            >
               Let's Connect
-            </button>
+            </HashLink>
           </div>
-          <div className="image order-1 xl:order-2">
-            <div className="w-[200px] h-[200px] xl:w-[400px] xl:h-[400px] rounded-[50%] bg-green-700 p-1">
+
+          <div
+            ref={imageRef}
+            className="flex justify-center xl:justify-end"
+          >
+            <div className="relative w-64 h-64 xl:w-96 xl:h-96 rounded-full bg-green-700 p-1">
+              <div className="absolute -inset-4 rounded-full bg-green-400/30 blur-3xl"></div>
               <img
-                className="w-full h-full rounded-[50%] object-center object-cover shadow-[10px_-30px_100px_10px] shadow-green-400"
                 src={me}
-                alt=""
+                alt="Mahfuj"
+                className="w-full h-full rounded-full object-cover shadow-[10px_-20px_80px_5px] shadow-green-400 relative"
               />
             </div>
           </div>
         </div>
       </Container>
-    </div>
+    </section>
   );
 };
 

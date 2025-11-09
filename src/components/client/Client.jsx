@@ -47,7 +47,7 @@ const Client = () => {
           {clients.map((client, index) => (
             <div
               key={index}
-              className="relative w-full max-w-sm bg-[rgba(20,20,20,0.25)] backdrop-blur-2xl border border-green-500/40 rounded-2xl p-6 shadow-[0_0_25px_#22c55e33] hover:shadow-[0_0_35px_#22c55e66] transition-all duration-500 flex flex-col items-center text-center"
+              className="relative w-full max-w-sm  backdrop-blur-2xl border border-green-500/40 rounded-2xl p-6 shadow-[0_0_25px_#22c55e33] flex flex-col items-center text-center bg-base-100"
             >
               <div className="w-24 h-24 mb-4 rounded-full overflow-hidden">
                 <img
