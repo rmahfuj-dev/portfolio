@@ -5,21 +5,21 @@ import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
 const clients = [
   {
     name: "John Doe",
-    image: "/clients/john.png",
+    image: "./client2.png",
     review:
       "Working with Mahfuj was a game-changer. The website looks amazing and works flawlessly!",
     rating: 5,
   },
   {
     name: "Sarah Smith",
-    image: "/clients/sarah.png",
+    image: "./client1.jpg",
     review:
       "Professional, responsive, and very creative. Highly recommend for any web project.",
     rating: 4.5,
   },
   {
     name: "Michael Lee",
-    image: "/clients/michael.png",
+    image: "./client3.jpeg",
     review:
       "The attention to detail and UI design is top-notch. Super satisfied with the final product.",
     rating: 5,

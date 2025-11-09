@@ -9,7 +9,7 @@ const Header = () => {
     <header className="sticky top-0 z-50 backdrop-blur-md bg-[rgba(20,20,20,0.5)] border-b border-green-500/20">
       <div className="navbar">
         <div className="flex-1">
-          <HashLink to="#hero" className="btn btn-ghost text-2xl text-green-400">
+          <HashLink to="#hero" className="logo text-2xl text-green-400">
             Mahfuj
           </HashLink>
         </div>

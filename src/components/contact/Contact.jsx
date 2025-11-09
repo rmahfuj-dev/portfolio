@@ -36,7 +36,7 @@ const Contact = () => {
           </form>
 
           <div className="flex gap-6 text-3xl text-white mt-4">
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="text-green-600">
+            <a href="https://www.linkedin.com/in/muhammad-mahfuj-6a6126361/" target="_blank" rel="noopener noreferrer" className="text-green-600">
               <FaLinkedin />
             </a>
             <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="text-green-600">
