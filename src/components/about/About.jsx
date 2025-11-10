@@ -8,9 +8,7 @@ const About = () => {
       <Container>
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
-            <h2 className="text-5xl font-extrabold text-green-400">
-              About Me
-            </h2>
+            <h2 className="text-5xl font-extrabold text-green-400">About Me</h2>
             <p className="text-lg text-base-content/70 leading-relaxed">
               I’m passionate about building digital experiences that look good,
               feel good, and work perfectly. I love mixing minimalism with
@@ -18,13 +16,13 @@ const About = () => {
             </p>
             <div className="flex flex-wrap gap-4">
               <span className="px-5 py-2 bg-green-500/10 text-green-400 border border-green-500/20 rounded-full text-sm font-semibold">
-                Frontend Developer
+                Full Stack Developer
               </span>
               <span className="px-5 py-2 bg-green-500/10 text-green-400 border border-green-500/20 rounded-full text-sm font-semibold">
-                React & Tailwind Lover
+                JavaScript & MERN Specialist
               </span>
               <span className="px-5 py-2 bg-green-500/10 text-green-400 border border-green-500/20 rounded-full text-sm font-semibold">
-                MERN Stack Learner
+                Scalable Web Application Builder
               </span>
             </div>
             <blockquote className="border-l-4 border-green-500 pl-4 italic text-base-content/70">

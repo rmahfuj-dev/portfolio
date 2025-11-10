@@ -9,13 +9,13 @@ const teamMembers = [
     description: "Lead developer, creating modern web experiences with React and Tailwind CSS.",
   },
   {
-    name: "Sarah Smith",
+    name: "Alex Baren",
     role: "UI/UX Designer",
     image: "./dev2.jpg",
     description: "Designs clean, modern, and user-friendly interfaces.",
   },
   {
-    name: "Michael Lee",
+    name: "Arickson D.",
     role: "Backend Developer",
     image: "./dev3.jpg",
     description: "Handles server-side logic and database management efficiently.",
