@@ -26,7 +26,7 @@ const About = () => {
               </span>
             </div>
             <blockquote className="border-l-4 border-green-500 pl-4 italic text-base-content/70">
-              “Code is art when it makes people feel something.”
+             “Every line of code should serve clarity, performance, and purpose.”
             </blockquote>
           </div>
 
